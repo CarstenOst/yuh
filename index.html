@@ -41,11 +41,66 @@
 .info {
   margin-top: 20px;
 }
+
+/* Added code for dropdown menus */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
 </style>
 </head>
 <body>
 <div class="navbar">
 <img src="logo.png" alt="Logo" class="logo">
+<!-- Added code for navbar items -->
+<div class="dropdown">
+<div>Studier</div>
+<div class="dropdown-content">
+<div class="dropdown-item">Bachelor</div>
+<div class="dropdown-item">Master</div>
+<div class="dropdown-item">PhD</div>
+</div>
+</div>
+<div class="dropdown">
+<div>Studentliv</div>
+<div class="dropdown-content">
+<div class="dropdown-item">Bolig</div>
+<div class="dropdown-item">Kantine</div>
+<div class="dropdown-item">Trening</div>
+</div>
+</div>
+<div class="dropdown">
+<div>Forskning</div>
+<div class="dropdown-content">
+<div class="dropdown-item">Fakulteter</div>
+<div class="dropdown-item">Senter</div>
+<div class="dropdown-item">Publikasjoner</div>
+</div>
+</div>
+<div class="dropdown">
+<div>Om UiA</div>
+<div class="dropdown-content">
+<div class="dropdown-item">Historie</div>
+<div class="dropdown-item">Organisasjon</div>
+<div class="dropdown-item">Kontakt</div>
+</div>
+</div>
+
 </div>
 <div class="picture">
 <!-- Insert picture here -->
